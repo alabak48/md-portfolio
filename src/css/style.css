@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@100;400;800&display=swap');
+
+
+:root {
+    --primary-text-color: #181E4B;
+    --secondary-text-color: #FF0191;
+
+
+    --primary-background-color: #FAFAFA;
+    --secondary-background-color: #393939;
+
+    --h1-text-size: 5rem;
+    --h2-text-size: 4rem;
+    --h3-text-size: 3rem;
+    --h4-text-size: 2rem;
+    --h5-text-size: 5.25rem;
+
+    --p1-text-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav {
+    background-color: white;
+    width: 81.25rem;
+    height: 3.9375rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+}
+
+#main-image {
+    width: 400px;
+    height: 400px;
+}
+
+main p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: var(--p1-text-size);
+}
+
+#colored {
+    color: var(--secondary-text-color);
+}
+
+.card__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills {
+    background-color: var(--secondary-background-color);
+}
+
+.skills img{
+width: 100px;}
+
+footer {
+    background-color: var(--secondary-background-color);
+}
+
+footer a, footer p{
+    color: white;
+}
