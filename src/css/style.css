@@ -53,6 +53,10 @@ main p {
     flex-direction: row;
 }
 
+.card-img-top {
+    min-height: 150px;
+}
+
 .skills {
     background-color: var(--secondary-background-color);
 }
