@@ -10,13 +10,18 @@
     --primary-background-color: #FAFAFA;
     --secondary-background-color: #393939;
 
-    --h1-text-size: 5rem;
+    --h1-text-size: 4.8rem;
     --h2-text-size: 4rem;
     --h3-text-size: 3rem;
     --h4-text-size: 2rem;
     --h5-text-size: 5.25rem;
 
-    --p1-text-size: 1.5rem;
+    --p1-text-size: 20px;
+    --p2-text-size: 18px;
+}
+
+.spc-5 {
+    margin-bottom: 5rem;
 }
 
 header {
@@ -34,9 +39,9 @@ nav {
     border-radius: 1rem;
 }
 
-#main-image {
-    width: 400px;
-    height: 400px;
+#main-image, .container__about img {
+    width: 550px;
+    height: 500px;
 }
 
 main p {
@@ -55,6 +60,7 @@ main p {
 
 .card-img-top {
     min-height: 150px;
+    border-radius: 36px;
 }
 
 .skills {
@@ -70,4 +76,32 @@ footer {
 
 footer a, footer p{
     color: white;
+}
+
+.container__about p{
+    font-size: var(--p2-text-size);
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1.8rem;
+}
+
+.socials__container {
+    background-color: #DEDEDE;
+}
+
+.socials__container img {
+    width: 50px;
+}
+
+.corner-image {
+    position: absolute;
+    top: -100px; 
+    right: -120px; 
+    z-index: 2; 
+}
+
+.card {
+    position: relative;
+    border-radius: 36px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
