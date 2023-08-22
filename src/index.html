@@ -20,9 +20,8 @@
             <img src="assets/rectangle.svg" alt="Small Picture">
         </div>
         <nav class="navbar navbar-expand-lg sticky-top spc-5">
-                    <img src="assets/logo.svg" alt="Small Picture">
             <a class="navbar-brand" href="#navigation">
-
+                <img src="assets/logo.svg" alt="Page Logo" id="logo">
             </a>
             </img>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -41,10 +40,10 @@
                         <a class="nav-link" href="#projects" id="projects">Projects</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#experience" id="experience">Skills</a>
+                        <a class="nav-link" href="#skills" id="skills">Skills</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#experience" id="experience">Socials</a>
+                        <a class="nav-link" href="#socials" id="socials">Socials</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#contact" id="contact">Contact</a>
@@ -90,7 +89,7 @@
                     <img src="assets/girl-checklist-code-tech.png" alt="Illustration Girl Code HTML CSS">
                 </div>
                 <div class="col mx-5">
-                    <h3>About Me</h3>
+                    <h2>About Me</h2>
                     <p>
                         With a solid foundation in HTML, CSS, and JavaScript, I bring websites to life with interactive
                         and visually appealing elements. My proficiency in React allows me to craft dynamic and
@@ -117,21 +116,21 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="assets/project-one.png" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">All Product Pack</h5>
+                        <h3 class="card-title">All Product Pack</h3>
                         <p class="card-text">The All Products Pack serves as the landing page for the JetBrains website,
                             showcasing their range of software products and services. Test assignment.</p>
-                        <a href="#" class="btn btn--primary--xl">View More</a>
+                        <a href="#" class="btn--link">View More</a>
                     </div>
                 </div>
 
                 <div class="card mx-5" style="width: 18rem;">
                     <img class="card-img-top" src="assets/project-two.png" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Automated Screenshot Generator</h5>
+                        <h3 class="card-title">Automated Screenshot Generator</h3>
                         <p class="card-text">Node.js script that takes screenshots of websites and uploads them to a
                             Google
                             Drive using the Google Drive API.</p>
-                        <a href="#" class="btn btn--primary--xl">View More</a>
+                        <a href="#" class="btn--link">View More</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -140,11 +139,11 @@
                     </div>
                     <img class="card-img-top" src="assets/project-three.png" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Events</h5>
+                        <h3 class="card-title">Events</h3>
                         <p class="card-text">Events website design that consists of a front page that includes the names
                             of
                             popular events.</p>
-                        <a href="#" class="btn btn--primary--xl">View More</a>
+                        <a href="#" class="btn--link">View More</a>
                     </div>
                 </div>
             </div>
@@ -159,7 +158,9 @@
         <div class="container-fluid text-center d-flex flex-column pt-5 pb-5">
             <div class="row align-items-center">
                 <div class="col skills__col--first">
-                    Bringing websites to life with newest technology
+                    <h4>
+                        Bringing websites to life with newest the technology
+                    </h4>
                 </div>
                 <div class="col-sm">
                     <img src="assets/icons/html.svg" alt="HTML" />
@@ -189,29 +190,29 @@
                             <div class="corner-image--left">
                                 <img src="assets/sparks-left-alignment.svg" alt="Small Picture">
                             </div>
-                            <h3>Get In <span id="colored">Touch</span></h3>
+                            <h5>Get In <span id="colored">Touch</span></h5>
                             <p>Let's collaborate and turn your digital visions into captivating realities.</p>
-                            <label for="inputName" class="form-label" placeholder="Name">Name</label>
-                            <input type="name" class="form-control" id="inputName1" aria-describedby="emailHelp">
+                            <label for="firstname" class="form-label" placeholder="Name">Name</label>
+                            <input type="name" class="form-control" id="firstname" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="inputSurname" class="form-label">Surname</label>
-                            <input type="surname" class="form-control" id="inputSurname1">
+                            <label for="lastname" class="form-label">Surname</label>
+                            <input type="surname" class="form-control" id="lastname">
                         </div>
                         <div class="mb-3">
-                            <label for="inputEmailAddress" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail1">
+                            <label for="emailaddress" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailaddress">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1">Leave Me a Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="message">Leave Me a Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
-
                         <button type="submit" class="btn btn--primary btn--primary--xl">Submit</button>
                     </form>
                 </div>
                 <div class="col ml-1">
                     <iframe
+                        title="Google Maps Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5792911515173!2d18.678333475979738!3d45.55878812712301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce7a607148fa3%3A0x3f0cc9e48a295957!2sFaculty%20of%20Humanities%20and%20Social%20Sciences%2C%20University%20of%20Osijek!5e0!3m2!1sen!2shr!4v1692380882840!5m2!1sen!2shr"
                         width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -223,16 +224,24 @@
         <div class="container text-center pt-5 pb-5">
             <div class="row align-items-center">
                 <div class="col-sm">
-                    <img src="assets/icons/github-logo.svg" alt="HTML" />
+                    <a href="https://github.com/alabak48" target="_blank" rel="noreferrer noopener">
+                    <img src="assets/icons/github-logo.svg" alt="Github Logo"/>
+                </a>
                 </div>
                 <div class="col-sm">
-                    <img src="assets/icons/linkedin-logo.svg" alt="HTML" />
+                    <a href="https://www.linkedin.com/in/anja-labak-1b71b7229/" target="_blank" rel="noreferrer noopener">
+                    <img src="assets/icons/linkedin-logo.svg" alt="Linkedin Logo" />
+                </a>
                 </div>
                 <div class="col-sm">
-                    <img src="assets/icons/instagram-logo.svg" alt="HTML" />
+                    <a href="https://www.instagram.com/anjalabak/" target="_blank" rel="noreferrer noopener">
+                    <img src="assets/icons/instagram-logo.svg" alt="Instagram Logo" />
+                </a>
                 </div>
                 <div class="col-sm">
-                    <img src="assets/icons/facebook-logo.svg" alt="HTML" />
+                    <a href="https://www.facebook.com/anja.labak.4/" target="_blank" rel="noreferrer noopener"">
+                    <img src="assets/icons/facebook-logo.svg" alt="Facebook logo" />
+                    </a>
                 </div>
             </div>
         </div>

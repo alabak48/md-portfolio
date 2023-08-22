@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.3125rem;
-    background: #FF0191;
+    background: #181E4B; 
     color: white;
     border: 0;
     font-weight: 700;
@@ -14,4 +14,13 @@
     width: 100%;
     padding: 0.75rem 0.5rem;
     border-radius: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.btn--link {
+    color: var(--primary-text-color);
+    font-weight: 600;
 }
