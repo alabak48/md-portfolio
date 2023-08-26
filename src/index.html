@@ -9,21 +9,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/buttons/buttons.css">
     <link rel="stylesheet" href="css/headings/headings.css">
+    <script defer="defer" src="Mechanics%20-%20Homepage_files/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
     <title>Portfolio</title>
 </head>
 
 <body>
     <!-- Navigation -->
-    <header class="mt-4" id="navigation">
+    <header id="navigation">
         <div class="corner-image--top-left">
             <img src="assets/rectangle.svg" alt="Small Picture">
         </div>
-        <nav class="navbar navbar-expand-lg sticky-top spc-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top spc-5">
             <a class="navbar-brand" href="#navigation">
                 <img src="assets/logo.svg" alt="Page Logo" id="logo">
             </a>
-            </img>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,26 +55,28 @@
         </nav>
     </header>
 
+
     <!-- Navigation -->
 
     <!-- Main -->
 
     <main>
-        <div class="container justify-content-center mb-5">
-            <div class="row align-items-center spc-5">
-                <div class="col mr-5">
+        <div class="container mb-md-5 mb-sm-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-md-0">
                     <h1>
                         Hi,<br> I'm Anja
                     </h1>
                     <h2 id="colored">UI Developer</h2>
                     <p>A passionate UI developer with a deep-rooted love for creating engaging and
                         user-friendly digital experiences. </p>
-                    <button class="btn--primary">
+                    <button class="btn--primary mb-5">
                         Contact Me
                     </button>
                 </div>
-                <div class="col ml-5">
-                    <img src="assets/girl-code-css-html.png" alt="Ilustrated Computer" id="main-image" />
+                <div class="col-md-6 text-right">
+                    <img src="assets/girl-code-css-html.png" alt="Illustrated Computer" id="main-image"
+                        class="img-fluid" />
                 </div>
             </div>
         </div>
@@ -82,13 +86,14 @@
 
     <!-- About -->
 
-    <section class="spc-5">
+    <section class="spc-md-5 offset">
         <div class="container container__about">
             <div class="row align-items-center spc">
-                <div class="col my-5">
-                    <img src="assets/girl-checklist-code-tech.png" alt="Illustration Girl Code HTML CSS">
+                <div class="col-md-6 text-left">
+                    <img src="assets/girl-checklist-code-tech.png" alt="Illustration Girl Code HTML CSS"
+                        class="cover__img">
                 </div>
-                <div class="col mx-5">
+                <div class="col-md-6 my-md-5">
                     <h2>About Me</h2>
                     <p>
                         With a solid foundation in HTML, CSS, and JavaScript, I bring websites to life with interactive
@@ -104,46 +109,54 @@
         </div>
     </section>
 
-
     <!-- About -->
 
     <!-- Cards -->
 
-    <section class="mt-5 mb-5 spc-5">
-        <h2 class="text-center mb-5">My Projects</h2>
+    <section class="mt-md-5 mb-md-5 spc-5 offset">
         <div class="container card__container justify-content-center">
-            <div class="row spc-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="assets/project-one.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h3 class="card-title">All Product Pack</h3>
-                        <p class="card-text">The All Products Pack serves as the landing page for the JetBrains website,
-                            showcasing their range of software products and services. Test assignment.</p>
-                        <a href="#" class="btn--link">View More</a>
+            <h2 class="mb-md-5 offset-bt">My Projects</h2>
+            <div class="row spc-md-5">
+                <div class="col-md-4 mb-4 offset-bt">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/project-one.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">All Product Pack</h3>
+                            <p class="card-text">The All Products Pack serves as the landing page for the JetBrains
+                                website,
+                                showcasing their range of software products and services. Test assignment.</p>
+                            <a href="#" class="btn--link">View More</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card mx-5" style="width: 18rem;">
-                    <img class="card-img-top" src="assets/project-two.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h3 class="card-title">Automated Screenshot Generator</h3>
-                        <p class="card-text">Node.js script that takes screenshots of websites and uploads them to a
-                            Google
-                            Drive using the Google Drive API.</p>
-                        <a href="#" class="btn--link">View More</a>
+                <div class="col-md-4 mb-4 offset-bt">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/project-two.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">Automated Screenshot Generator</h3>
+                            <p class="card-text">Node.js script that takes screenshots of websites and uploads them to a
+                                Google
+                                Drive using the Google Drive API.</p>
+                            <a href="#" class="btn--link">View More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="corner-image--right">
-                        <img src="assets/sparks-right-alignment.svg" alt="Small Picture">
-                    </div>
-                    <img class="card-img-top" src="assets/project-three.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h3 class="card-title">Events</h3>
-                        <p class="card-text">Events website design that consists of a front page that includes the names
-                            of
-                            popular events.</p>
-                        <a href="#" class="btn--link">View More</a>
+
+                <div class="col-md-4 mb-4 offset-bt">
+                    <div class="card">
+                        <div class="corner-image--right">
+                            <img src="assets/sparks-right-alignment.svg" alt="Small Picture">
+                        </div>
+                        <img class="card-img-top" src="assets/project-three.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">Events</h3>
+                            <p class="card-text">Events website design that consists of a front page that includes the
+                                names
+                                of
+                                popular events.</p>
+                            <a href="#" class="btn--link">View More</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,11 +167,11 @@
 
     <!-- Spliter Section -->
 
-    <section class="skills spc-5">
-        <div class="container-fluid text-center d-flex flex-column pt-5 pb-5">
+    <section class="skills spc-md-5 mb-5">
+        <div class="container-fluid text-center d-flex flex-column pt-md-5 pb-md-5">
             <div class="row align-items-center">
                 <div class="col skills__col--first">
-                    <h4>
+                    <h4 class="skills__heading offset-sm">
                         Bringing websites to life with newest the technology
                     </h4>
                 </div>
@@ -171,7 +184,7 @@
                 <div class="col-sm">
                     <img src="assets/icons/javascript.svg" alt="JavaScript" />
                 </div>
-                <div class="col-sm">
+                <div class="col-sm offset-bt">
                     <img src="assets/icons/react.svg" alt="React JavaScript" />
                 </div>
             </div>
@@ -181,23 +194,23 @@
     <!-- Spliter Section -->
 
 
-    <section>
-        <div class="container mb-5 mt-5 mb-5 container__form">
-            <div class="row align-items-center">
-                <div class="col mr-1">
+    <section class="offset">
+        <div class="container mt-5 mb-md-5 mt-md-5 mb-md-5 container__form">
+            <div class="row">
+                <div class="col-md-6 mb-4">
                     <form>
-                        <div class="mb-3">
+                        <div class="mb-md-3">
                             <div class="corner-image--left">
                                 <img src="assets/sparks-left-alignment.svg" alt="Small Picture">
                             </div>
                             <h5>Get In <span id="colored">Touch</span></h5>
                             <p>Let's collaborate and turn your digital visions into captivating realities.</p>
-                            <label for="firstname" class="form-label" placeholder="Name">Name</label>
-                            <input type="name" class="form-control" id="firstname" aria-describedby="emailHelp">
+                            <label for="firstname" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="lastname" class="form-label">Surname</label>
-                            <input type="surname" class="form-control" id="lastname">
+                            <input type="text" class="form-control" id="lastname">
                         </div>
                         <div class="mb-3">
                             <label for="emailaddress" class="form-label">Email</label>
@@ -210,37 +223,38 @@
                         <button type="submit" class="btn btn--primary btn--primary--xl">Submit</button>
                     </form>
                 </div>
-                <div class="col ml-1">
-                    <iframe
-                        title="Google Maps Location"
+                <div class="col-md-6 mb-4">
+                    <iframe title="Google Maps Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5792911515173!2d18.678333475979738!3d45.55878812712301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce7a607148fa3%3A0x3f0cc9e48a295957!2sFaculty%20of%20Humanities%20and%20Social%20Sciences%2C%20University%20of%20Osijek!5e0!3m2!1sen!2shr!4v1692380882840!5m2!1sen!2shr"
-                        width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="socials__container">
         <div class="container text-center pt-5 pb-5">
             <div class="row align-items-center">
-                <div class="col-sm">
+                <div class="col-sm offset-bt">
                     <a href="https://github.com/alabak48" target="_blank" rel="noreferrer noopener">
-                    <img src="assets/icons/github-logo.svg" alt="Github Logo"/>
-                </a>
+                        <img src="assets/icons/github-logo.svg" alt="Github Logo" />
+                    </a>
                 </div>
-                <div class="col-sm">
-                    <a href="https://www.linkedin.com/in/anja-labak-1b71b7229/" target="_blank" rel="noreferrer noopener">
-                    <img src="assets/icons/linkedin-logo.svg" alt="Linkedin Logo" />
-                </a>
+                <div class="col-sm offset-bt">
+                    <a href="https://www.linkedin.com/in/anja-labak-1b71b7229/" target="_blank"
+                        rel="noreferrer noopener">
+                        <img src="assets/icons/linkedin-logo.svg" alt="Linkedin Logo" />
+                    </a>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm offset-bt">
                     <a href="https://www.instagram.com/anjalabak/" target="_blank" rel="noreferrer noopener">
-                    <img src="assets/icons/instagram-logo.svg" alt="Instagram Logo" />
-                </a>
+                        <img src="assets/icons/instagram-logo.svg" alt="Instagram Logo" />
+                    </a>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm offset-bt">
                     <a href="https://www.facebook.com/anja.labak.4/" target="_blank" rel="noreferrer noopener"">
-                    <img src="assets/icons/facebook-logo.svg" alt="Facebook logo" />
+                    <img src=" assets/icons/facebook-logo.svg" alt="Facebook logo" />
                     </a>
                 </div>
             </div>
@@ -261,7 +275,15 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
