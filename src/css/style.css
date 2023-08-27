@@ -5,6 +5,7 @@
 :root {
     --primary-text-color: #181E4B;
     --secondary-text-color: #c70071;
+    --tertiary-text-color: #0997D9; 
 
 
     --primary-background-color: #FAFAFA;
@@ -24,17 +25,6 @@
 
 .spc-5 {
     margin-bottom: 5rem;
-}
-
-#logo {
-    margin-left: 1rem;
-        height: 35px;
-}
-
-@media (max-width: 468px) {
-    #logo { 
-        margin-left: 0;
-    }
 }
 
 header {
@@ -63,15 +53,16 @@ header {
 nav {
     background-color: white;
     flex-shrink: 0;
-    border-radius: 1rem;
+    border-radius: 1rem;        
+    width: 90%;
 }
 
-@media (min-width: 1800px) {
-    nav {
-        width: 100rem;
+@media (max-width: 468px) {
+    nav { 
+        border-radius: 0; 
+        width: 100%;
     }
 }
-
 
 main p {
     font-family: 'Fredoka', sans-serif;
@@ -133,7 +124,15 @@ main p {
 }   
 
 #logo {
-    height: 60px;
+    height: 35px;
+    margin-left: 2rem;
+}
+
+@media (max-width: 468px) {
+    #logo { 
+        margin-left: 0;
+        height: 28px;
+    }
 }
 
 #colored {
@@ -207,7 +206,7 @@ footer a, footer p{
 }
 
 
-@media (max-width: 468px) {
+@media (max-width: 1024px) {
     .corner-image--right, .corner-image--left {
         display: none;
     }
@@ -269,7 +268,43 @@ iframe {
 
 
 
-.navbar a {
+nav a {
     color: black !important;
     font-weight: 500;
 }
+
+/* Add this CSS to your stylesheet */
+
+/* Navbar links */
+.navbar-nav a {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Change the color to your preference */
+    transition: color 0.3s;
+}
+
+.navbar-nav a:hover {
+    color: var(--secondary-background-color) !important;
+}
+
+/* Underline container */
+.navbar-nav a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px; /* Change the thickness to your preference */
+    background-color: var(--tertiary-text-color); /* Change the color to your preference */
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: width 0.3s;
+}
+
+/* Underline effect on hover */
+.navbar-nav a:hover::before {
+    width: 75%; /* Change the width to control the underline length */
+}
+
+
+
+
