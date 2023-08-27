@@ -10,6 +10,11 @@
     font-weight: 700;
 }
 
+@media (min-width: 425px) {
+    .btn--primary {
+        padding: 0.5rem 0.5rem;
+    }
+}
 
 
 .btn--primary--xl {
