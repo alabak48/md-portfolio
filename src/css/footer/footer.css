@@ -1,0 +1,19 @@
+footer {
+    background-color: var(--secondary-background-color);
+}
+
+footer a, footer p{
+    color: white;
+}
+
+.container-fluid.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__a {
+    color: white;
+    padding: 0.5rem 1rem;
+}

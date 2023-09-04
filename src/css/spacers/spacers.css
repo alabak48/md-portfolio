@@ -1,0 +1,25 @@
+.spc-5 {
+    margin-bottom: 5rem;
+}
+
+.offset {
+    margin: 10rem 0 !important;
+}
+
+.offset-bt--10 {
+    margin-bottom: 10rem !important;
+}
+
+.offset-bt {
+    margin-bottom: 2rem !important;
+}
+
+@media (max-width: 468px) {
+    .offset {
+        margin: 3rem 0 !important;
+    }
+
+    .offset-sm {
+        margin: 1.5rem 0.5rem;
+    }
+}   
