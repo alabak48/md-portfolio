@@ -19,8 +19,8 @@
     --p2-text-size: 18px;
 }
 
-.corner-image--top-left {
-    @media (max-width: 468px) {
+@media (max-width: 468px) {
+    .corner-image--top-left {
         display: none;
     }
 }
