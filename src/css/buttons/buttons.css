@@ -1,4 +1,5 @@
-.btn--primary {
+.btn--primary, 
+.btn--secondary {
     width: 8.5625rem;
     padding: 1rem 1.5rem;
     justify-content: center;

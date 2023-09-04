@@ -11,7 +11,6 @@
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="../accessiblity/styles/styles.css">
         <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/buttons/buttons.css">
     <link rel="stylesheet" href="../css/headings/headings.css">
@@ -28,21 +27,21 @@
     <div class="corner-image--top-left">
         <img src="../assets/rectangle.svg">
     </div>
-    <div class="nav container-fluid justify-content-center mt-3">
-            <div class="navbar navbar-expand-lg navbar-light bg-light sticky-top spc-5 justify-content-center">
-                <img src="../assets/logo.svg" id="logo">
+    <div class="header nav container-fluid justify-content-center spc-5">
+            <div class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-center">
+                <img src="../assets/logo.svg" id="logo--a">
                 <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
-                        <div class="nav-item">Home</div>
-                        <div class="nav-item">About</div>
-                        <div class="nav-item">My Projects</div>
-                        <div class="nav-item">Skills</div>
-                        <div class="nav-item">Socials</div>
-                        <div class="nav-item">Contact</div>
-                    </div>
+                        <div class="nav-item--a">Home</div>
+                        <div class="nav-item--a">About</div>
+                        <div class="nav-item--a">Projects</div>
+                        <div class="nav-item--a">Skills</div>
+                        <div class="nav-item--a">Socials</div>
+                        <div class="nav-item--a">Contact</div>
+                </div>
             </div>
         </div>
     </div>
@@ -52,20 +51,24 @@
 
         <!-- Main -->
         <div class="container mb-md-5 mb-sm-5">
-            <div class="row align-items-center offset">
+            <div class="row align-items-center">
                 <div class="col-md-6 mb-md-0">
                     <div class="h1">
                         Hi,<br> I'm Anja
                     </div>
                     <div class="h2" id="colored">UI Developer
                 </div>
-                <div class="p">A passionate UI developer with a deep-rooted love for creating engaging and
+                <div class="p1 mb-3">A passionate UI developer with a deep-rooted love for creating engaging and
                     user-friendly digital experiences. </div>
-                <div style="color: white;">
-                    Contact Me
-                </div>
+                    <div class="btn--secondary mb-5">
+                        Contact Me
+                    </div>
             </div>
             <div class="col-md-6 text-right">
+                    <img src="../assets/girl-code-css-html.png" 
+                        alt="Illustration of Girl with computer. The illustration shows three bubbles that say HTML, CSS, and JavaScript" 
+                        id="main-image" 
+                        class="img-fluid" />
             </div>
         </div>
     </div>
@@ -76,10 +79,13 @@
     <div class="container">
     <div class="row align-items-center spc offset">
         <div class="col-md-6 text-left">
+            <img src="../assets/girl-checklist-code-tech.png" alt="Illustration of a Girl with notes. The illustration is in purple and yellow color." 
+            aria-labelledby="image-description"
+            class="cover__img">
         </div>
         <div class="col-md-6 my-md-5">
-            <div class="h2" "image-description">About Me</div>
-            <div class="p">
+            <div class="h2">About Me</div>
+            <div class="p2">
                 With a solid foundation in HTML, CSS, and JavaScript, I bring websites to life with interactive
                 and visually appealing elements. My proficiency in React allows me to craft dynamic and
                 efficient user interfaces that leave a lasting impression. In addition, my grasp of PHP empowers
@@ -95,15 +101,15 @@
     <!-- About -->
 
     <!-- Cards -->
-        <div class="container card__container justify-content-center offset-bt">
+        <div class="container card__container justify-content-center offset-bt--10">
             <div class="mb-md-5 offset-bt h2">My Projects</div>
             <div class="row spc-md-5">
                 <div class="col-md-4 mb-4 offset-bt">
                     <div class="card">
                         <img class="card-img-top" src="../assets/project-one.png" alt="Card image cap">
                         <div class="card-body">
-                            <div class="card-title">All Product Pack</div>
-                            <div class="card-text">The All Products Pack serves as the landing page for the JetBrains
+                            <div class="h3 card-title">All Product Pack</div>
+                            <div class="card-text mb-3">The All Products Pack serves as the landing page for the JetBrains
                                 website,
                                 showcasing their range of software products and services. Test assignment.</div>
                             <div class="btn--link">View More</div>
@@ -114,8 +120,8 @@
                     <div class="card">
                         <img class="card-img-top" src="../assets/project-two.png" alt="Card image cap">
                         <div class="card-body">
-                            <div class="card-title">Automated Screenshot Generator</div>
-                            <div class="card-text">Node.js script that takes screenshots of websites and uploads them to a
+                            <div class="h3 card-title">Automated Screenshot Generator</div>
+                            <div class="card-text mb-3">Node.js script that takes screenshots of websites and uploads them to a
                                 Google
                                 Drive using the Google Drive API.</div>
                             <div href="#" class="btn--link">View More</div>
@@ -129,8 +135,8 @@
                         </div>
                         <img class="card-img-top" src="../assets/project-three.png">
                         <div class="card-body">
-                            <div class="card-title">Events</div>
-                            <div class="card-text">Events website design that consists of a front page that includes the
+                            <div class="h3 card-title">Events</div>
+                            <div class="card-text mb-3">Events website design that consists of a front page that includes the
                                 names
                                 of
                                 popular events.</div>
@@ -148,7 +154,7 @@
         <div class="container-fluid text-center d-flex flex-column pt-md-5 pb-md-5 skills">
             <div class="row align-items-center">
                 <div class="col skills__col--first">
-                    <div class="skills__heading offset-sm">
+                    <div class="h4 skills__heading offset-sm">
                         Bringing websites to life with newest the technology
                 </div>
                 </div>
@@ -182,21 +188,21 @@
                                 <img src="../assets/sparks-left-alignment.svg" alt="Small Picture">
                             </div>
                             <div class="h2">Get In <span id="colored">Touch</span></div>
-                            <div>Let's collaborate and turn your digital visions into captivating realities.</div>
-                            <div for="firstname" class="form-label">Name</div>
+                            <div class="mb-2">Let's collaborate and turn your digital visions into captivating realities.</div>
+                            <div for="firstname" class="form-label mb-2">Name</div>
                             <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" name="name">
                         </div>
                         <div class="mb-3">
-                            <div for="lastname" class="form-label">Surname</div>
+                            <div for="lastname" class="form-label mb-2">Surname</div>
                             <input type="text" class="form-control" id="lastname" name="surname">
                         </div>
                         <div class="mb-3">
-                            <div for="emailaddress" class="form-label">Email</div>
+                            <div for="emailaddress" class="form-label mb-2">Email</div>
                             <input type="email" class="form-control" id="emailaddress" name="email">
                         </div>
                         <div class="mb-3">
-                            <div for="message">Leave Me a Message</div>
-                            <div class="form-control" id="message" rows="3" name="mess"></div>
+                            <div for="message" class="mb-2">Leave Me a Message</div>
+                            <div class="text-area" id="message" rows="3" name="mess"></div>
                         </div>
                         <button type="submit" class="btn btn--primary btn--primary--xl">Submit</button>
                     </form>
@@ -209,40 +215,41 @@
             </div>
         </div>
 
-        <div class="container-fluid text-center pt-5 pb-5 socials">
+        <div class="container-fluid text-center pt-5 pb-5 socials__container">
             <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm">
                         <img src="../assets/icons/github-logo.svg" />
-                        <div>Github</div>
+                        <div style="font-weight: 500; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Github</div>
                 </div>
-                <div class="col-sm" tabindex="1">
+                <div class="col-sm">
                         <img src="../assets/icons/linkedin-logo.svg" />
-                        <div>Linkedin</div>
+                        <div style="font-weight: 500; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Linkedin</div>
                 </div>
                 <div class="col-sm">
                         <img src="../assets/icons/instagram-logo.svg" />
-                        <div>Instagram</div>
+                        <div style="font-weight: 500; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Instagram</div>
                 </div>
                 <div class="col-sm">
                     <img src=" ../assets/icons/facebook-logo.svg" tabindex="1" />
-                    <div>Facebook</div>
+                    <div style="font-weight: 500; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Facebook</div>
                     </a>
                 </div>
             </div>
         </div>
         </div>
 
-        <div class="container-fluid footer">
+        <div class="container-fluid footer__container" tabindex="1" style="background-color: var(--secondary-background-color); height: 209px;">
             <div class="row align-items-center">
-            <div>Home</div>
-            <div>About</div>
-            <div>My Projects</div>
-            <div>Skills</div>
-            <div>Socials</div>
-            <div>Contact</div>
-        </div>
-            <div class="text-center text-body-secondary">&copy; 2023 Anja Labak, FFOS</div>
+                <div class="footer__a">Home</div>
+                <div class="footer__a">About</div>
+                <div class="footer__a">My Projects</div>
+                <div class="footer__a">Skills</div>
+                <div class="footer__a">Socials</div>
+                <div class="footer__a">Contact</div>
+            </div>
+            <hr style="width: 70%; border-color: white;"/>
+            <div class="text-center text-body-secondary" style="color: white;">&copy; 2023 Anja Labak, FFOS</div>
         </div>
 
 
